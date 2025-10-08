@@ -1,0 +1,6 @@
+node_modules/
+vendor/
+
+yarn-error.log
+.phpunit.result.cache
+.idea

@@ -8,20 +8,20 @@ use function urlencode;
 class Embed {
 
 	private static array $providerPatterns = [
-		'#https?://www\.facebook\.com/.*/posts/.*#i'       => [ 'https://graph.facebook.com/v8.0/oembed_post', true ],
-		'#https?://www\.facebook\.com/.*/activity/.*#i'    => [ 'https://graph.facebook.com/v8.0/oembed_post', true ],
-		'#https?://www\.facebook\.com/.*/photos/.*#i'      => [ 'https://graph.facebook.com/v8.0/oembed_post', true ],
-		'#https?://www\.facebook\.com/photo(s/|\.php).*#i' => [ 'https://graph.facebook.com/v8.0/oembed_post', true ],
-		'#https?://www\.facebook\.com/permalink\.php.*#i'  => [ 'https://graph.facebook.com/v8.0/oembed_post', true ],
-		'#https?://www\.facebook\.com/media/.*#i'          => [ 'https://graph.facebook.com/v8.0/oembed_post', true ],
-		'#https?://www\.facebook\.com/questions/.*#i'      => [ 'https://graph.facebook.com/v8.0/oembed_post', true ],
-		'#https?://www\.facebook\.com/notes/.*#i'          => [ 'https://graph.facebook.com/v8.0/oembed_post', true ],
-		'#https?://www\.facebook\.com/.*/videos/.*#i'      => [ 'https://graph.facebook.com/v8.0/oembed_video', true ],
-		'#https?://www\.facebook\.com/video\.php.*#i'      => [ 'https://graph.facebook.com/v8.0/oembed_video', true ],
-		'#https?://www\.facebook\.com/watch/?\?v=\d+#i'    => [ 'https://graph.facebook.com/v8.0/oembed_video', true ],
+		'#https?://www\.facebook\.com/.*/posts/.*#i'       => [ 'https://graph.facebook.com/v24.0/oembed_post', true ],
+		'#https?://www\.facebook\.com/.*/activity/.*#i'    => [ 'https://graph.facebook.com/v24.0/oembed_post', true ],
+		'#https?://www\.facebook\.com/.*/photos/.*#i'      => [ 'https://graph.facebook.com/v24.0/oembed_post', true ],
+		'#https?://www\.facebook\.com/photo(s/|\.php).*#i' => [ 'https://graph.facebook.com/v24.0/oembed_post', true ],
+		'#https?://www\.facebook\.com/permalink\.php.*#i'  => [ 'https://graph.facebook.com/v24.0/oembed_post', true ],
+		'#https?://www\.facebook\.com/media/.*#i'          => [ 'https://graph.facebook.com/v24.0/oembed_post', true ],
+		'#https?://www\.facebook\.com/questions/.*#i'      => [ 'https://graph.facebook.com/v24.0/oembed_post', true ],
+		'#https?://www\.facebook\.com/notes/.*#i'          => [ 'https://graph.facebook.com/v24.0/oembed_post', true ],
+		'#https?://www\.facebook\.com/.*/videos/.*#i'      => [ 'https://graph.facebook.com/v24.0/oembed_video', true ],
+		'#https?://www\.facebook\.com/video\.php.*#i'      => [ 'https://graph.facebook.com/v24.0/oembed_video', true ],
+		'#https?://www\.facebook\.com/watch/?\?v=\d+#i'    => [ 'https://graph.facebook.com/v24.0/oembed_video', true ],
 
-		'#https?://(www\.)?instagr(\.am|am\.com)/(p|tv)/.*#i' => [ 'https://graph.facebook.com/v8.0/instagram_oembed', true ],
-		'#https?://(www\.)?instagr(\.am|am\.com)/p/.*#i'   => [ 'https://graph.facebook.com/v8.0/instagram_oembed', true ],
+		'#https?://(www\.)?instagr(\.am|am\.com)/(p|tv)/.*#i' => [ 'https://graph.facebook.com/v24.0/instagram_oembed', true ],
+		'#https?://(www\.)?instagr(\.am|am\.com)/p/.*#i'   => [ 'https://graph.facebook.com/v24.0/instagram_oembed', true ],
 	];
 
 	private ?string $app_id;

@@ -12,6 +12,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ### Changed
 - Changed namespace to AchttienVijftien\Plugin\OembedPlus
 - Forked WordPress oEmbed Plus plugin
+- Update Plugin to latest Graph API v24.0
 
 ### Added
 - PHP 8.3+ required

@@ -31,8 +31,8 @@
         "achttienvijftien/building-techniques": "^1.1"
     },
     "scripts": {
-        "format": "phpcbf --standard=1815BuildingTechniques --report-summary --report-source src",
-        "lint": "phpcs --standard=1815BuildingTechniques src"
+        "format": "phpcbf --report-summary --report-source",
+        "lint": "phpcs"
     },
     "config": {
         "allow-plugins": {

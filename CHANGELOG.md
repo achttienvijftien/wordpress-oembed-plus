@@ -7,14 +7,19 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
-[unreleased]: #
+## [2.0.0] - 2025-12-09
 
 ### Changed
-- Changed namespace to AchttienVijftien\Plugin\OembedPlus
+
 - Forked WordPress oEmbed Plus plugin
-- Update Plugin to latest Graph API v24.0
+- Changed namespace to AchttienVijftien\Plugin\OembedPlus
+- PHP 8.3+ required
+- Update plugin to latest Graph API v24.0
 
 ### Added
-- PHP 8.3+ required
+
 - Composer 1815 Building techniques requirements
 
+[unreleased]: https://github.com/achttienvijftien/wordpress-oembed-plus/compare/main..2.0.0
+
+[2.0.0]: https://github.com/achttienvijftien/wordpress-oembed-plus/compare/2.0.0..v1.6

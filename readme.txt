@@ -2,11 +2,11 @@
 Contributors: ayeshrajans, 1815
 Tags: embed, facebook, instagram, oembed
 Requires at least: 6.7
-Tested up to: 5.8
+Tested up to: 6.8.3
 Stable tag: 2.0.0
 Requires PHP: 8.3
-License: GPLv2 or later
-License URI: https://www.gnu.org/licenses/gpl-2.0.html
+License: GPLv3 or later
+License URI: https://www.gnu.org/licenses/gpl-3.0.html
 
 Adds support for embedding Facebook and Instagram posts in Block Editor (Gutenberg) and Classic Editor.
 
@@ -88,7 +88,7 @@ define('OEMBED_PLUS_HIDE_ADMIN_UI', true);
 **1.5**
 
  - Updates to the readme file to make it more clear that this plugin supports both Classic Editor and Block Editor.
- 
+
 **1.6**
 
  - Updated the plugin minimum WordPress core requirement to 4.9, along with relevant compatibility changes. The plugin works on all WordPress versions from 4.9 through 5.6 and up.
@@ -98,3 +98,11 @@ define('OEMBED_PLUS_HIDE_ADMIN_UI', true);
  - Maintenance of this plugin was on a hiatus, but with this version, it is back to active development.
  - Fixes a few bugs that caused failed embeds.
  - Updated instructions to match changes in Facebook Developer program.
+
+**2.0**
+
+ - Forked WordPress oEmbed Plus plugin
+ - Changed namespace to AchttienVijftien\Plugin\OembedPlus
+ - PHP 8.3+ required
+ - Update plugin to latest Graph API v24.0
+ - Composer 1815 Building techniques requirements

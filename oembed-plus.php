@@ -4,7 +4,7 @@
  * Plugin URI:   https://www.1815.nl/
  * Version:      2.0.0
  * Description:  Adds support for embedding Facebook and Instagram posts in Block Editor and Classic Editor.
- * Licence:      GPLv2 or later
+ * License:      GPLv3 or later
  * Author:       Ayesh Karunaratne
  * Author URI:   https://aye.sh/open-source
  * Modified:     1815 <it@1815.nl> on 2025-10-08: Forked
@@ -18,6 +18,7 @@ add_filter(
 	'oembed_providers',
 	static function ( array $providers ): array {
 		require_once __DIR__ . '/src/Embed.php';
+
 		return Embed::registerProviders( $providers );
 	}
 );

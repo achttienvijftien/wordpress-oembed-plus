@@ -1,17 +1,18 @@
 <?php
 /**
  * Plugin Name:  oEmbed Plus
- * Plugin URI:   https://php.watch/articles/wordpress-facebook-instagram-oembed
- * Version:      1.7
+ * Plugin URI:   https://www.1815.nl/
+ * Version:      2.0.0
  * Description:  Adds support for embedding Facebook and Instagram posts in Block Editor and Classic Editor.
  * Licence:      GPLv2 or later
  * Author:       Ayesh Karunaratne
  * Author URI:   https://aye.sh/open-source
- * Requires PHP: 7.1
+ * Modified:     1815 <it@1815.nl> on 2025-10-08: Forked
+ * Requires PHP: 8.3
  */
 
-use Ayesh\OembedPlus\Embed;
-use Ayesh\OembedPlus\Settings;
+use AchttienVijftien\Plugin\OembedPlus\Embed;
+use AchttienVijftien\Plugin\OembedPlus\Settings;
 
 add_filter('oembed_providers', static function (array $providers): array {
 	require_once __DIR__ . '/src/Embed.php';
@@ -40,7 +41,7 @@ add_filter('oembed_fetch_url', static function ($provider_url): string {
 
 add_action('admin_init', static function (): void {
 	if (defined('OEMBED_PLUS_HIDE_ADMIN_UI') && !empty(OEMBED_PLUS_HIDE_ADMIN_UI)) {
-		return;
+        return;
 	}
 	require_once __DIR__ . '/src/Settings.php';
 	Settings::runHook();

@@ -1,6 +1,6 @@
 <?php
 
-use Ayesh\OembedPlus\Settings;
+use AchttienVijftien\Plugin\OembedPlus\Settings;
 
 if (!defined('WP_UNINSTALL_PLUGIN')) {
 	die;

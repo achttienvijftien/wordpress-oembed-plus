@@ -20,6 +20,6 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 - Composer 1815 Building techniques requirements
 
-[unreleased]: https://github.com/achttienvijftien/wordpress-oembed-plus/compare/main..2.0.0
+[unreleased]: https://github.com/achttienvijftien/wordpress-oembed-plus/compare/2.0.0..main
 
-[2.0.0]: https://github.com/achttienvijftien/wordpress-oembed-plus/compare/2.0.0..v1.6
+[2.0.0]: https://github.com/achttienvijftien/wordpress-oembed-plus/compare/v1.6..2.0.0

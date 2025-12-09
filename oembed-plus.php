@@ -25,7 +25,7 @@ add_filter(
 add_filter(
 	'oembed_fetch_url',
 	static function ( $provider_url ): string {
-		if ( strpos( $provider_url, 'https://graph.facebook.com/v8.0/' ) !== 0 ) {
+		if ( strpos( $provider_url, 'https://graph.facebook.com/v24.0/' ) !== 0 ) {
 			return $provider_url;
 		}
 
